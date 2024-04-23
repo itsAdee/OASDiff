@@ -30,11 +30,6 @@ jobs:
         run: |
           ls -lash
           tree
-      - name: Check for all changes
-        uses: Tufin/oasdiff-action@v2
-        with:
-          base: 'base/api.yaml'
-          revision: 'revision/api.yaml'
       - name: Check for breaking changes only
         uses: Tufin/oasdiff-action@v2
         with:
