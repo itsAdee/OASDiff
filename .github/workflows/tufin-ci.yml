@@ -31,7 +31,7 @@ jobs:
           ls -lash
           tree
       - name: Check for breaking changes only
-        uses: Tufin/oasdiff-action@v2
+        uses: oasdiff/oasdiff-action/breaking@main
         with:
           base: 'base/api.yaml'
           revision: 'revision/api.yaml'
